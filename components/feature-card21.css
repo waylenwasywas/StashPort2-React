@@ -8,7 +8,7 @@
   justify-content: flex-start;
 }
 .feature-card21-icon {
-  fill: var(--dl-color-gray-500);
+  fill: #ffffff;
   width: 2rem;
   height: 2rem;
   flex-shrink: 0;
@@ -21,8 +21,14 @@
   justify-content: flex-start;
 }
 .feature-card21-text {
+  color: #ffffff;
+  font-family: Montserrat;
   font-weight: 600;
   margin-bottom: var(--dl-space-space-unit);
+}
+.feature-card21-text1 {
+  color: #ffffff;
+  font-family: Montserrat;
 }
 
 
