@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StashPort</title>
+    <meta
+      name="description"
+      content="Find the ultimate cloud storage solution with features that fit your needs, wants, and wallet."
+    />
+    <meta property="og:title" content="StashPort" />
+    <meta
+      property="og:description"
+      content="Find the ultimate cloud storage solution with features that fit your needs, wants, and wallet."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/playground_assets/spl.png.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/blaze-slider@latest/dist/blaze.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          <video
+            src="public/playground_assets/introphoto-1500h.jpg"
+            loop=""
+            muted=""
+            poster="public/playground_assets/introphoto-1500h.jpg"
+            autoplay=""
+            playsinline=""
+            class="home-video"
+          ></video>
+          <header data-thq="thq-navbar" class="home-navbar">
+            <a href="index.html" class="home-navlink">
+              <img
+                alt="image"
+                src="public/playground_assets/screenshot%202023-01-04%20at%203.56.37%20am-1500h.png"
+                class="home-branding"
+              />
+            </a>
+            <a href="services.html" class="home-navlink1">
+              <h1 class="home-text">Services</h1>
+            </a>
+            <a
+              href="https://billing.stashport.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link"
+            >
+              <h1 class="home-text01">Billing</h1>
+            </a>
+            <a
+              href="https://docs.stashport.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link01"
+            >
+              <h1 class="home-text02">Docs</h1>
+            </a>
+            <a
+              href="https://cloud.stashport.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link02 button"
+            >
+              MyPort
+            </a>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <div class="home-hamburger">
+                <img
+                  alt="image"
+                  src="public/playground_assets/hamburger.svg"
+                  class="home-icon"
+                />
+              </div>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="home-nav"
+              >
+                <div class="home-container1">
+                  <a href="index.html" class="home-navlink2">
+                    <img
+                      alt="image"
+                      src="public/playground_assets/screenshot%202023-01-04%20at%203.56.37%20am-1500h.png"
+                      class="home-image"
+                    />
+                  </a>
+                  <div data-thq="thq-close-menu" class="home-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="home-icon01">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  data-thq="thq-mobile-menu-nav-links"
+                  data-role="Nav"
+                  class="home-nav1"
+                >
+                  <span class="home-text03">Services</span>
+                  <span class="home-text04">Billing</span>
+                  <span class="home-text05">Docs</span>
+                  <span class="home-text06">Blog</span>
+                </nav>
+                <div class="home-container2">
+                  <button class="home-login button">MyPort</button>
+                </div>
+              </div>
+              <div class="home-icon-group">
+                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon03">
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon05">
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon07">
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+          <div class="home-hero-content">
+            <div class="home-header-container">
+              <div class="home-header"></div>
+              <h1 class="home-text07">
+                <span class="home-text08">
+                  Affordable, Feature Rich and&nbsp;
+                </span>
+                <br class="home-text09" />
+                <span class="home-text10">Secure</span>
+                <br class="home-text11" />
+              </h1>
+              <p class="home-caption">
+                <span>
+                  Find the ultimate cloud storage solution with features that
+                  fit your needs, wants, and wallet.
+                </span>
+                <br />
+              </p>
+            </div>
+            <a
+              href="https://billing.stashport.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link03 button"
+            >
+              <span class="home-text14">
+                <span class="home-text15">Get started today</span>
+                <br class="home-text16" />
+              </span>
+            </a>
+          </div>
+        </section>
+        <section class="home-statistics">
+          <div class="home-content">
+            <div class="home-stat">
+              <h3 class="home-header01">Custom Plans</h3>
+              <span class="home-text17">
+                Find the solution that fits you best
+              </span>
+            </div>
+            <div class="home-stat1">
+              <h3 class="home-header02">2-3x Cheaper</h3>
+              <span class="home-caption1">
+                In comparison to iCloud and Google Drive
+              </span>
+            </div>
+            <div class="home-stat2">
+              <h3 class="home-header03">Apps + Features</h3>
+              <span class="home-caption2">
+                StashPort includes features and apps that improves productivity
+                and organization
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="home-slider">
+          <div class="home-header04">
+            <h2 class="home-heading">
+              The all-in-one solution to your cloud demands
+            </h2>
+          </div>
+          <div class="home-selector">
+            <p class="home-caption3">
+              With features such as a password manager, finance manager and much
+              more, StashPort is your all-in-one solution
+            </p>
+          </div>
+        </section>
+        <section class="home-objectives">
+          <div class="home-content01">
+            <span class="home-text18">Objectives</span>
+            <div class="home-objectives-list">
+              <div class="objective">
+                <h3 class="home-text19">Save</h3>
+                <p class="home-text20">
+                  With StashPorts pricing, saving money is easy with StashPort.
+                </p>
+              </div>
+              <div class="objective home-objective1">
+                <h3 class="home-text21">Backup</h3>
+                <p class="home-text22">
+                  Backup your photos, mobile devices and files with StashPort
+                </p>
+              </div>
+              <div class="objective home-objective2">
+                <h3 class="home-text23">Grow</h3>
+                <p class="home-text24">
+                  Grow your cloud at a affordable price with StashPort
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-growth">
+          <div class="home-content02">
+            <div class="home-header05">
+              <div class="home-header06">
+                <h2 class="home-heading1">
+                  <span>Cloud storage built for your demands</span>
+                  <br />
+                </h2>
+              </div>
+              <p class="home-caption4"></p>
+              <p class="home-caption5">
+                No matter your demands and budget, StashPort is your go-to
+                solution for everything cloud storage based
+              </p>
+            </div>
+            <div class="home-testimonial">
+              <div class="home-content03">
+                <span class="home-text27">Testimonial</span>
+                <p class="home-text28">
+                  StashPort is the go to solution for&nbsp; backups and file
+                  management. With only $1 I can backup everything I need to.
+                </p>
+              </div>
+              <div class="home-information">
+                <div class="home-author">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1552234994-66ba234fd567?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fHBvdHJhaXR8ZW58MHx8fHwxNjcxMDU2MzMz&amp;ixlib=rb-4.0.3&amp;w=200"
+                    class="home-icon09"
+                  />
+                  <span class="home-name">Jonathan Iantsevitch</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-images">
+            <div class="home-square"></div>
+            <img
+              alt="image"
+              src="public/playground_assets/cs-transformed-1400w.jpeg"
+              class="home-image1"
+            />
+          </div>
+        </section>
+        <section class="home-experience">
+          <div class="home-images1">
+            <div class="home-square1"></div>
+            <img
+              alt="image"
+              src="public/playground_assets/360_f_267083342_dw7nvtp2oy0jfo2qtjdlwepoaxocjgxm1-1400w.jpg"
+              class="home-image2"
+            />
+          </div>
+          <div class="home-content04">
+            <div class="home-header07">
+              <div class="home-header-container1">
+                <div class="home-header08">
+                  <h2 class="home-heading2">A Better Cloud Solution</h2>
+                </div>
+                <p class="home-caption6">
+                  The better solution to your existing storage
+                </p>
+              </div>
+              <div class="home-checkmarks">
+                <div class="home-check">
+                  <div class="home-mark">
+                    <svg viewBox="0 0 1024 1024" class="home-icon10">
+                      <path
+                        d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="home-text29">File Redundancy</span>
+                </div>
+                <div class="home-check1">
+                  <div class="home-mark1">
+                    <svg viewBox="0 0 1024 1024" class="home-icon12">
+                      <path
+                        d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="home-text30">Cheap Pricing</span>
+                </div>
+                <div class="home-check2">
+                  <div class="home-mark2">
+                    <svg viewBox="0 0 1024 1024" class="home-icon14">
+                      <path
+                        d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="home-text31">
+                    Import all your data from StashPort
+                  </span>
+                </div>
+                <div class="home-check3">
+                  <div class="home-mark3">
+                    <svg viewBox="0 0 1024 1024" class="home-icon16">
+                      <path
+                        d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="home-text32">
+                    Apps for all your mobile and desktop devices
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-create">
+          <div class="home-content05">
+            <div class="home-header09">
+              <h2 class="home-heading3">
+                <span class="home-text33">Create your own</span>
+                <span class="home-text34">cloud</span>
+                <span class="home-text35">now!</span>
+                <br />
+              </h2>
+            </div>
+            <a
+              href="https://billing.stashport.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link04 button"
+            >
+              <span>
+                <span>Get started today</span>
+                <br />
+              </span>
+            </a>
+          </div>
+        </section>
+        <section class="home-comparision">
+          <div class="home-header-container2">
+            <div class="home-header10">
+              <h2 class="home-heading4">
+                <span>Plans</span>
+                <br />
+              </h2>
+            </div>
+            <p class="home-caption7">
+              StashPort offers a range of solutions to your cloud
+            </p>
+          </div>
+          <div class="home-table">
+            <div class="home-row">
+              <div class="home-headers">
+                <span class="home-text42">Placeholder</span>
+              </div>
+              <div class="home-plans">
+                <div class="home-row01">
+                  <span class="home-text43">Individual</span>
+                  <span class="home-text44">Business</span>
+                  <span class="home-text45">Private Cloud</span>
+                </div>
+              </div>
+            </div>
+            <div class="home-row02">
+              <div class="home-headers1">
+                <span class="home-text46">Cloud Size</span>
+              </div>
+              <div class="home-plans1">
+                <div class="home-row03">
+                  <div class="value">
+                    <span class="home-text47">100-500GB</span>
+                  </div>
+                  <div class="value"><span class="home-text48">1TB+</span></div>
+                  <div class="value">
+                    <span class="home-text49">Custom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-row04">
+              <div class="home-headers2">
+                <span class="home-text50">Disk Redundancy</span>
+              </div>
+              <div class="home-plans2">
+                <div class="home-row05">
+                  <div class="value">
+                    <div class="check-check">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="value">
+                    <div class="check-check">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="value">
+                    <div class="check-check">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-row06">
+              <div class="home-headers3">
+                <span class="home-text51">Upgradable Plans</span>
+              </div>
+              <div class="home-plans3">
+                <div class="home-row07">
+                  <div class="value">
+                    <div class="check-check check-root-class-name1">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="value">
+                    <div class="check-check check-root-class-name2">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="value">
+                    <div class="check-check check-root-class-name3">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-row08">
+              <div class="home-headers4">
+                <span class="home-text52">Mobile/Desktop Applications</span>
+              </div>
+              <div class="home-plans4">
+                <div class="home-row09">
+                  <div class="value">
+                    <div class="check-check">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="value">
+                    <div class="check-check">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="value">
+                    <div class="check-check">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-row10">
+              <div class="home-headers5">
+                <span class="home-text53">Priority Support</span>
+              </div>
+              <div class="home-plans5">
+                <div class="home-row11">
+                  <div class="value">
+                    <div class="line-line line-root-class-name2"></div>
+                  </div>
+                  <div class="value">
+                    <div class="check-check check-root-class-name4">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="value">
+                    <div class="check-check check-root-class-name5">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-row12">
+              <div class="home-headers6">
+                <span class="home-text54">Dedicated Resources</span>
+              </div>
+              <div class="home-plans6">
+                <div class="home-row13">
+                  <div class="value">
+                    <div class="line-line line-root-class-name"></div>
+                  </div>
+                  <div class="value">
+                    <div class="line-line line-root-class-name1"></div>
+                  </div>
+                  <div class="value">
+                    <div class="check-check check-root-class-name">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-faq">
+          <div class="home-header11">
+            <h2 class="home-heading5">
+              <span class="home-text55">Frequently asked&nbsp;</span>
+              <span class="home-text56">questions</span>
+              <span>
+                <span></span>
+                <span></span>
+              </span>
+            </h2>
+          </div>
+          <div class="home-content06">
+            <div class="home-column">
+              <div class="home-element">
+                <h3 class="home-header12">How is my data encrypted?</h3>
+                <p class="home-content07">
+                  At StashPort, we opted for native AES-256 ZFS encryption. This
+                  means in the case of a physical breach, your data will be
+                  unreadable.&nbsp;&nbsp;
+                </p>
+              </div>
+              <div class="home-element1">
+                <h3 class="home-header13">
+                  What is StashPort's private cloud?
+                </h3>
+                <p class="home-content08">
+                  At StashPort, we offer the ability for our customers to build
+                  their own cloud with dedicated server resources and customize
+                  it any way they so desire.
+                </p>
+              </div>
+            </div>
+            <div class="home-column1">
+              <div class="home-element2">
+                <h3 class="home-header14">Are there mobile/desktop apps?</h3>
+                <p class="home-content09">
+                  StashPort at its core, uses a open-source software called
+                  Nextcloud. This software also includes apps that allow you to
+                  integrate your devices with StashPort. You may also connect
+                  via webdav.
+                </p>
+              </div>
+              <div class="home-element3">
+                <h3 class="home-header15">How can I upgrade my plan?</h3>
+                <p class="home-content10">
+                  By heading over to your billing, you may see an option to
+                  upgrade your existing plan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="home-footer">
+          <div class="home-content11">
+            <div class="home-main">
+              <div class="home-branding1">
+                <img
+                  alt="image"
+                  src="public/playground_assets/screenshot%202023-01-04%20at%203.56.37%20am-1500h.png"
+                  class="home-image3"
+                />
+                <span class="home-text60">
+                  <span>
+                    Find the ultimate cloud storage solution with features that
+                    fit your needs, wants, and wallet.
+                  </span>
+                  <span></span>
+                </span>
+              </div>
+              <div class="home-links">
+                <div class="home-container3">
+                  <div class="home-container4">
+                    <div class="home-column2">
+                      <span class="home-header16">Legal</span>
+                      <div class="home-list">
+                        <span class="home-link05">Home</span>
+                        <span class="home-text63">Services</span>
+                        <a
+                          href="https://stashport.com/privacy.html"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          class="home-link06"
+                        >
+                          <span class="home-text64">Privacy</span>
+                          <br />
+                        </a>
+                        <a
+                          href="https://stashport.com/TOS.html"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          class="home-link07"
+                        >
+                          TOS
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-column3">
+                  <span class="home-header17">Sites</span>
+                  <div class="home-list1">
+                    <span class="home-text66">MyPort</span>
+                    <a
+                      href="https://status.stashport.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link08"
+                    >
+                      Status
+                    </a>
+                    <a
+                      href="https://billing.stashport.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link09"
+                    >
+                      Billing
+                    </a>
+                    <a
+                      href="https://docs.stashport.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link10"
+                    >
+                      Docs
+                    </a>
+                    <a
+                      href="https://blog.stashport.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link11"
+                    >
+                      Blog
+                    </a>
+                  </div>
+                </div>
+                <div class="home-column4">
+                  <span class="home-header18">Social</span>
+                  <div class="home-list2">
+                    <a
+                      href="https://www.linkedin.com/company/89876994/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link12"
+                    >
+                      LinkedIn
+                    </a>
+                    <a
+                      href="https://twitter.com/StashPort"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link13"
+                    >
+                      Twitter
+                    </a>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100088348726346"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link14"
+                    >
+                      Facebook
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-bottom">
+              <span class="home-text67">
+                © 2022-2023 StashPort - All rights reserved
+              </span>
+              <a href="#top" data-role="scroll-top" class="home-link15 button">
+                <svg viewBox="0 0 1024 1024" class="home-icon18">
+                  <path
+                    d="M170 512l342-342 342 342-62 60-238-238v520h-84v-520l-240 238z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://www.googletagmanager.com/gtag/js?id=G-3M5MJPKHVL"
+      async=""
+    ></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-3M5MJPKHVL');
+    </script>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script src="https://unpkg.com/blaze-slider@latest/dist/blaze-slider.min.js"></script>
+  </body>
+</html>
