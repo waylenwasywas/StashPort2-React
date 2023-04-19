@@ -28,18 +28,6 @@
 
 
 
-@media(max-width: 1200px) {
-  .feature-card2-icon {
-    fill: #b9b9b9;
-  }
-  .feature-card2-text {
-    color: #ffffff;
-  }
-  .feature-card2-text1 {
-    color: #ffffff;
-    font-family: Montserrat;
-  }
-}
 @media(max-width: 767px) {
   .feature-card2-feature-card {
     flex-direction: row;

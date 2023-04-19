@@ -35,32 +35,6 @@
 
 
 
-@media(max-width: 1600px) {
-  .feature-card21-icon {
-    fill: #ffffff;
-  }
-  .feature-card21-text {
-    color: #ffffff;
-    font-family: Montserrat;
-  }
-  .feature-card21-text1 {
-    color: #ffffff;
-    font-family: Montserrat;
-  }
-}
-@media(max-width: 1200px) {
-  .feature-card21-icon {
-    fill: #afafaf;
-  }
-  .feature-card21-text {
-    color: #ffffff;
-    font-family: Montserrat;
-  }
-  .feature-card21-text1 {
-    color: #ffffff;
-    font-family: Montserrat;
-  }
-}
 @media(max-width: 767px) {
   .feature-card21-feature-card {
     flex-direction: row;
